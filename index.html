@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>App_H_W</title>
     <link rel="stylesheet" type="text/css" href="_css/interface.css">
+    <script src="../App_H_W/_JS/tratdados.js"></script>
 
 </head>
 
@@ -12,28 +13,41 @@
     <article id="artigo">
         <section id="import_arq">
             <h1>
-                importação de arquivos
+
+                
+                    Selecione o arquivo .txt: <input type="file" id = 'seleciona_arq' ><input type="submit" value="Enviar" onclick="carrega_dados()"></p>
+
             </h1>
             <h1>
-                definição de padrões de entrada
+                Defina o padrão do arquivo de entrada: <input type="text" size="40px" placeholder="DD/MM/YYYYHHHHHHHHHHHHHHCCCCCCCC">
             </h1>
 
         </section>
 
         <section id="cad_usuario">
             <h1>
-                cadastro de usuários
+                Cadastro de usuários:
             </h1>
             <p>
-                adição
+                Inserir novo usuário? <input type="button" value="Inserir">
             </p>
             <p>
-                exclusão
+                Excluir usuário cadastrado? <input type="button" value="Pesquisar">
             </p>
 
         </section>
 
+        <section id="relatorios">
+            <h1>Relatórios:</h1>
+            <select name="txtRel" id="cRel" size="10" > <option value=""> Dados dos relatórios</option></select>
+            
+        </section>
+
     </article>
+
     
 </body>
+<footer id = 'rodape'><!--inicio do roddapé-->
+    <p> &reg; _by Kluska L.</p>
+    </footer>
 </html>

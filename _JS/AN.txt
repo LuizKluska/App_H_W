@@ -1,0 +1,80 @@
+declaração de variáveis		>>   var nome = "luiz"
+
+mudanção de tipos		>>  var idade = "54"  --> Number.parseFloat / Number.parseInt / num.toString() / Number()
+
+ver o tipo da var		>> typeof
+
+entrada de dados		>>  var nome = window.prompt('strng') / var salario = Number.parseFloat(window.prompt(`numero REAL 0.00`))
+
+saída de dados			>> writeln(`Olá ${nome}. Seu nome tem ${nome.length} letras <br>`)
+
+templat sting 			>>  delimitado por crase `$(variavel ou operação)` + utiliza o placeholder -> $()
+
+conversão para moedas 		>> sal = novo_salario.toLocaleString('pt-br', {style: 'currency', currency: 'BRL'})
+
+escreve na tela 		>> document.writeln
+
+escreve em uma janela		>> window.alert (`string $(var)`);
+
+var.toUpperCase			>> torna MAIÚSCULAS
+var.toLowerCase			>> torna minúsculas
+
+var.length			>> retorna o número de caracteres de uma string
+
+operadores artitmeticos		>>  ** exponencial  
+
+oderm precedência		>> ()  **  *   /    %  +  - < > >= <= != == === !(não)  && (e)  ||(ou, disjunção)
+
+pré e pós incremento		>>  ++n (incrementa antes)   e n++ (incrementa depois)
+
+operadores comparação		>> < > >= <= != == === ( no JS  5 == "5"  pois não testa o tipo da var para testar valor e tipo se usa ===)
+
+operadores lógicos		>> !(não)  && (e)  ||(ou, disjunção)
+
+operador ternário		>>  (teste) ? (valor se True) : (valor se False)
+
+DOM (document objects model)	>> facilita acessar os elementos da página html através do java script
+
+condicionais no JS		>> if(condição) { resultado se verdade}
+				>> esle if (condição aninhada) {resultado}
+				>> else {resultado se falso}
+
+conticional multipla 		>> swictch (expressão) { case valor 1,2,3: comandos executados break / default: ---- break}
+
+trabalhando com datas/Horas	>> var agora =new Date()
+					var dia_semana = agora.getDay() // mostra e semana em numero 0 = domingo 6 = sábado
+					var dia = agora.getUTCDate()
+					var mes =agora.getUTCMonth()
+					var ano = agora.getFullYear()
+					var hora = agora.getHours()
+					var minuto = agora.getUTCMinutes()
+
+ estruturas de repetição	>>  while (condição) { execução}
+				>> do {execução}  while(condição)
+				>> for (inicio; teste lógico; incremento) {execução}
+
+array (variavel compostas)	>> let n = []
+os indices são = python	>> let n[0] = 1  fica n = [1]
+				>> n.push(7)     fica n = [1,7]
+
+comprimento 			>> n.length   'sem parenteses'
+
+ordena em crescente		>> n.sort
+
+metodos para buscar valores 	>> n.indexOf(valor)  retorna a chave do 7 se não encontrar retorna -1
+				>> 
+
+
+
+
+ 
+
+
+
+
+ 
+
+
+
+
+
