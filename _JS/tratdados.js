@@ -1,7 +1,18 @@
-const readline = require('readline');
-const fs = require('fs');
-var lista = [];
 
-var itens = fs.readFileSync('AN.txt', 'utf-8');
-console.log(itens)
+function carrega_dados(n){
+    
+    console.log(`Arquivo carregado: ${n}`)
+    
+    const fs = require('fs');
+    var arquivo = fs.readFileSync(n,'utf-8');
+    var lista_grande = arquivo.split('\r\n');
+
+    for (v of lista_grande) {
+        console.log(v);
+    }
+
+}
+carrega_dados('AN.txt')
+
+
 
