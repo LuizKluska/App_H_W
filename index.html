@@ -5,19 +5,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>App_H_W</title>
     <link rel="stylesheet" type="text/css" href="_css/interface.css">
-    <script src="../App_H_W/_JS/tratdados.js"></script>
+    <script src="/_JS/tratdados.js"> </script>
 
 </head>
 
 <body id='corpo'>
     <article id="artigo">
         <section id="import_arq">
-            <h1>
+            <form>
 
                 
-                    Selecione o arquivo .txt: <input type="file" id = 'arquvo_selecionado' >
+                    Informe o caminho do arquivo .txt: <input type="text" id = 'caminho_do_arquivo' name = '_caminho' placeholder="Aceita apenas arquivo do tipo (.txt)" size="50"> <input id = "carregar" name="_caminho" type="submit" value= 'Carregar' onclick="envia_dados()">
+                     
+                     <p id='res' >....</p>
+                    <script>
+                        function envia_dados(){
+                        
+                        //const fs = require('fs'); ?????????? não funciona
+                        
+                        var caminho_do_arquivo = document.getElementById('caminho_do_arquivo').value;
+                        var res = document.getElementById('res');
+                        res.innerHTML = caminho_do_arquivo
+                         
+                        
+                       
+                        var arquivo = fs.readFileSync(caminho_do_arquivo,'utf-8');
+                        
+                        var lista_grande = arquivo.split('\r\n');
+                        
+                        
+                        }
 
-            </h1>
+
+
+                    </script>
+
+
+            </form>
             <h1>
                 Defina o padrão do arquivo de entrada: <input type="text" size="40px" placeholder="DD/MM/YYYYHHHHHHHHHHHHHHCCCCCCCC"><input id = 'arquivo_selecionado' type="submit" value="Enviar" onclick="carrega_dados()">
             </h1>
