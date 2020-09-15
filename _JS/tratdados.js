@@ -1,17 +1,20 @@
-/* function envia_dados(){
-    
-   
-    var caminho_do_arquivo = document.getElementById('caminho_do_arquivo').value;
-    console.log(caminho_do_arquivo)
-    res.innerHTML = caminho_do_arquivo;
-    const fs = require('fs');
-    var arquivo = fs.readFileSync(caminho_do_arquivo,'utf-8');
-    var lista_grande = arquivo.split('\r\n');
-    var res = document.getElementById('res');
-    
-    
-    
-    
+var leitorDeTXT = new FileReader()
+window.onload = function init() {
+    leitorDeTXT.onload = leTXT;
+}
 
-    }
-*/
+function pegaTXT(inputFile) {
+    var file = inputFile.files[0];
+    leitorDeTXT.readAsText(file);
+    
+}
+
+function leTXT(evt) {
+
+    var fileLista = evt.target.result.split('\n');
+    var TXTsaida = document.getElementById('TXTsaida');
+    TXTsaida.innerHTML = fileLista
+    
+    
+  }
+
