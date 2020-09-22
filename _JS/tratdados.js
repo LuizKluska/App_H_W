@@ -10,11 +10,8 @@ function pegaTXT(inputFile) {
 }
 
 function leTXT(evt) {
-
     var fileLista = evt.target.result.split('\n');
     var TXTsaida = document.getElementById('TXTsaida');
     TXTsaida.innerHTML = fileLista
-    
-    
-  }
-
+        
+}
